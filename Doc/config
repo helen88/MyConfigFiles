@@ -1,4 +1,4 @@
-# put this at ~/.ssh/
+# cp or (ln -s) this file to ~/.ssh/
 
 Host github.com
 User git
