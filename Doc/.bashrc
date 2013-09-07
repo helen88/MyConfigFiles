@@ -94,6 +94,7 @@ alias ll='ls -la --color=auto'
 alias ls='ls --color=auto --show-control-chars'
 alias lm='ll | less' 
 alias df='df -h'
+alias du='du -h --max-depth=1'
 alias cp='cp -i'
 
 alias cd-='cd -'
