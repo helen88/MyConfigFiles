@@ -9,4 +9,4 @@
 [http]
 	proxy = 10.14.105.82:808
 [core]
-	excludesfile = /home/will/GitHub/gitignore/Node.gitignore
+	excludesfile = /home/will/Workspace/GitHub/gitignore/Node.gitignore
