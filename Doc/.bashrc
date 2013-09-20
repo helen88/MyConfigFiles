@@ -5,7 +5,7 @@ export JAVA_HOME=/home/will/Download/Software/Programming/jdk1.7.0_25
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 
-export PATH=${JAVA_HOME}/bin:/home/will/node/bin:$PATH
+export PATH=${JAVA_HOME}/bin:/home/will/node/bin:/home/will/go/bin:$PATH
 
 # for examples
 
