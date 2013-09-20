@@ -113,6 +113,7 @@ alias gc='git checkout'
 alias gd='git diff'
 alias gp='git push'
 alias gcmt='git commit -am'
+alias gb='git branch'
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
