@@ -1,11 +1,15 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 
+# java ~
 export JAVA_HOME=/home/will/Download/Software/Programming/jdk1.7.0_25
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 
-export PATH=${JAVA_HOME}/bin:/home/will/node/bin:/home/will/go/bin:$PATH
+# golang ~
+export GOROOT=/home/will/go
+
+export PATH=${JAVA_HOME}/bin:${GOROOT}/bin:/home/will/node/bin:$PATH
 
 # for examples
 
