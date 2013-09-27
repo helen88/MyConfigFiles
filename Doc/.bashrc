@@ -8,8 +8,9 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 
 # go ~
 export GOROOT=/home/will/Download/Software/Programming/go
+export GOPATH=/home/will/Download/Software/Programming/go/MyDir
 
-export PATH=${JAVA_HOME}/bin:${GOROOT}/bin:/home/will/node/bin:$PATH
+export PATH=${JAVA_HOME}/bin:${GOROOT}/bin:${GOPATH}/bin:/home/will/node/bin:$PATH
 
 # for examples
 
