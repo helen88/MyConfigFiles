@@ -1,0 +1,1 @@
+scp -P1046 "$1" zgli@pomelo3.server.163.org:/styx/home/zgli/
