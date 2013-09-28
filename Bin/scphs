@@ -1,0 +1,1 @@
+scp -P1046 zgli@pomelo3.server.163.org:/tmp/hfs/Lord/"$1".heapsnapshot ~/Downloads/Lord/

@@ -1,0 +1,2 @@
+# grep "$1" * -rn --color=auto -I --exclude=*.{swp,json,min.js,log,html}
+grep "$1" * -rn --color=auto -I	--exclude-dir={node_modules,lib} --exclude=*.min.js --include=*.js 

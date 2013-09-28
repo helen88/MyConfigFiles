@@ -1,0 +1,6 @@
+if [ x$2 != x ]
+then
+	wget http://pomelo3.server.163.org:8080/"$1"."$2"
+else
+	wget http://pomelo3.server.163.org:8080/"$1".heapsnapshot
+fi
