@@ -28,7 +28,7 @@ set fillchars+=stl:\ ,stlnc:\
 if has('gui_running')
   " source $MY_DIR/.vimrc_statusline
 else
-  " source $MY_DIR/.vimrc_statusline_iterm2
+  source $MY_DIR/.vimrc_statusline_terminator
 endif
 
 set guifont=Courier_New:h15
