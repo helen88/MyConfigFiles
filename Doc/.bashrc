@@ -1,6 +1,7 @@
 source /home/will/Workspace/GitHub/MyConfigFiles/Doc/git-completion.bash
 source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.git-prompt.sh
 source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.color-ps1.sh
+source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.bash_aliases
 
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
