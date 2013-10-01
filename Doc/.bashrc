@@ -1,13 +1,13 @@
-source /home/will/Workspace/GitHub/MyConfigFiles/Doc/git-completion.bash
-source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.git-prompt.sh
-source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.color-ps1.sh
-source /home/will/Workspace/GitHub/MyConfigFiles/Doc/.bash_aliases
+MY_DIR=/home/will/Workspace/GitHub/MyConfigFiles/Doc 
 
-export CLICOLOR=1
-export LSCOLORS="gxfxcxdxbxegedabagacad"
+. $MY_DIR/git-completion.bash
+. $MY_DIR/.git-prompt.sh
+. $MY_DIR/.color-ps1.sh
+. $MY_DIR/.bash_aliases
+
 # Set Titlebar and Prompt
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-export PS1="\[${BLUE}\]\u@mac:\[${YELLOW}\]\w\[${GREEN}\]\$(__git_ps1)\[${NORMAL}\]\$ "
+export PS1="\[${BLUE}\]\u@ubuntu:\[${YELLOW}\]\w\[${GREEN}\]\$(__git_ps1)\[${NORMAL}\]\$ "
 
 # java ~
 export JAVA_HOME=/home/will/Download/Software/Programming/jdk1.7.0_25
@@ -38,14 +38,8 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
 fi
 
