@@ -12,11 +12,13 @@ filetype plugin indent on
 syntax on
 syntax enable
 
+" Always show statusline
 set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 " Solarized options 
 let g:solarized_termtrans = 1
-" let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 set background=dark
@@ -28,7 +30,7 @@ set fillchars+=stl:\ ,stlnc:\
 if has('gui_running')
   " source $MY_DIR/.vimrc_statusline
 else
-  source $MY_DIR/.vimrc_statusline_terminator
+  " source $MY_DIR/.vimrc_statusline_terminator
 endif
 
 set guifont=Courier_New:h15
