@@ -27,6 +27,7 @@ alias gp='git push'
 alias gcmt='git commit -am'
 alias gb='git branch'
 alias grep='grep --color=auto'
+alias pgr='ps aux | grep'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
