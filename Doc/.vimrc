@@ -27,6 +27,13 @@ colorscheme solarized
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
 
+" Tag List
+let Tlist_Use_Right_Window=1
+let Tlist_Enable_Fold_Column=0  " 使taglist插件不显示左边的折叠行
+let Tlist_Show_One_File=1 " taglist插件只显示当前文件的tag
+let Tlist_Exit_OnlyWindow=1 " 如果taglist窗口是最后一个窗口则退出Vim
+let Tlist_File_Fold_Auto_Close=1  " 自动折叠
+
 if has('gui_running')
   " source $MY_DIR/.vimrc_statusline
 else
@@ -43,6 +50,7 @@ set autowriteall
 
 let mapleader = ","
 map <leader>nn :NERDTreeToggle<cr>
+map <leader>tt :TlistToggle<cr>
 map <C-s> :w<CR>
 map <CR> o<ESC>
 map <S-CR> O<ESC>
@@ -66,7 +74,7 @@ set incsearch " do incremental searching
 " autoload .vimrc
 autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
 set wildmenu  " cmd auto completion
-set ignorecase
+" set ignorecase  " search ignorecase
 set hlsearch
 
 " Don't use Ex mode, use Q for formatting
