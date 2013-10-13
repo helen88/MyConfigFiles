@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-MY_DIR=~/MyConfigFiles
+CONF_DIR=~/MyConfigFiles
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -50,7 +50,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$PATH:/home/will/Download/Software/Programming/jdk1.7.0_25/bin:/home/will/go/bin:/home/will/Download/Software/Programming/redis-2.6.16/src:/home/will/Workspace/GitHub/MyConfigFiles/Bin:/home/will/node/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
-. $MY_DIR/.bash_aliases
+. $CONF_DIR/.bash_aliases
 
 # red: 31, green: 32, yellow: 33, blue: 34, purple: 35, cyan: 36
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
