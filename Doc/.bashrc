@@ -9,7 +9,7 @@ MY_BIN=/home/will/Workspace/GitHub/MyConfigFiles/Bin
 
 # Set Titlebar and Prompt
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-export PS1="\[${BLUE}\]\u@ubuntu:\[${YELLOW}\]\w\[${GREEN}\]\$(__git_ps1)\[${NORMAL}\]\$ "
+export PS1='\[${BLUE}\]\u@ubuntu:\[${YELLOW}\]\w\[${GREEN}\]$(__git_ps1 " (%s)")\[${NORMAL}\]\$ '
 
 # java ~
 export JAVA_HOME=/home/will/Download/Software/Programming/jdk1.7.0_25
