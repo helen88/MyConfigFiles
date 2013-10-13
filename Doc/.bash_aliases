@@ -1,5 +1,5 @@
 # some more ls aliases
-alias reloadbr="cd /home/will/Workspace/GitHub/MyConfigFiles/Doc && source ./.bashrc && cd -"
+alias reloadzr="cd /home/will/Workspace/GitHub/MyConfigFiles/Doc && source ./.zshrc && cd -"
 alias l='ls -CF'
 alias ll='ls -la --color=auto'
 alias ls='ls --color=auto --show-control-chars'
@@ -20,16 +20,7 @@ alias ztar='tar -zvcf'
 alias uztar='tar -zvxf'
 alias man='man -a'
 alias vi='vim'
-alias gs='git status'
-alias gc='git checkout'
-alias gd='git diff'
-alias gp='git push'
-alias gcmt='git commit -am'
-alias gb='git branch'
-alias grep='grep --color=auto'
 alias pgr='ps aux | grep'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
 
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
