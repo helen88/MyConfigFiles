@@ -4,7 +4,7 @@ RPROMPT='[%*]'
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_no_bold[blue]%}(%{$fg_no_bold[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX=""
-ZSH_THEME_GIT_PROMPT_CLEAN="✔ %{$fg_no_bold[blue]%})"
+ZSH_THEME_GIT_PROMPT_CLEAN="✔%{$fg_no_bold[blue]%})"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_no_bold[yellow]%}⚡%{$fg_no_bold[blue]%})"
 
 export LSCOLORS="gxfxcxdxbxegedabagacad"
