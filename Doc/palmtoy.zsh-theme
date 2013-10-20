@@ -1,4 +1,5 @@
-PROMPT='%{$fg_no_bold[blue]%}%n%{$fg_no_bold[magenta]%}➜ %{$fg_no_bold[cyan]%}%3~$(git_prompt_info)%{$reset_color%}» '
+# color values: red, green, yellow, blue, magenta, cyan, white
+PROMPT='%{$fg_no_bold[blue]%}%n%{$fg_no_bold[green]%}♬ %{$fg_no_bold[cyan]%}%5~$(git_prompt_info)%{$reset_color%}$ '
 RPROMPT='[%*]'
 
 # git theming
