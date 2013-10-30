@@ -47,8 +47,9 @@ plugins=(git github node npm archlinux colored-man colorize command-not-found co
 
 source $ZSH/oh-my-zsh.sh
 
-export GOBIN=~/go/bin
-export GOPATH=~/go
+export GOROOT=~/go
+export GOBIN=$GOROOT/bin
+export GOPATH=/home/will/Exercise/Go
 
 # Customize to your needs...
 export PATH=~/Download/Software/Programming/jdk1.7.0_25/bin:$GOPATH:$GOBIN:~/Download/Software/Programming/redis-2.6.16/src:~/Workspace/GitHub/MyConfigFiles/Bin:~/node/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH
