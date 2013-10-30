@@ -9,9 +9,8 @@ alias du='du -h --max-depth=1'
 alias cp='cp -iR'
 
 alias cd-='cd -'
-alias cd..='cd ..'
-alias cd...='cd ../../'
-alias cd....="cd ../../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
 alias mv='mv -i'
 alias rm='rm -i'
 alias md='mkdir -p'
