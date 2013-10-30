@@ -1,5 +1,5 @@
 # some more ls aliases
-alias reloadzr="cd /home/will/Workspace/GitHub/MyConfigFiles/Doc && source ./.zshrc && cd -"
+alias reloadzsh="cd /home/will/Workspace/GitHub/MyConfigFiles/Doc && source ./.zshrc && cd -"
 alias l='ls -CF'
 alias ll='ls -la --color=auto'
 alias ls='ls --color=auto --show-control-chars'
