@@ -43,11 +43,12 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github node npm archlinux colored-man colorize command-not-found copydir copyfile cp debian terminitor zsh-syntax-highlighting)
+plugins=(git github node npm archlinux colored-man colorize command-not-found copydir copyfile cp debian terminitor)
 
 source $ZSH/oh-my-zsh.sh
 
 export GOROOT=$HOME/go
+
 export GOPATH=$HOME/Exercise/Go
 export GOBIN=$GOPATH/bin
 
@@ -62,4 +63,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
 
 fpath=(~/GitHub/zsh-completions/src $fpath)
+. $HOME/GitHub/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
