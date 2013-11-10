@@ -1,4 +1,6 @@
 MY_DIR=/home/will/Workspace/GitHub/MyConfigFiles/Doc 
+# my bin
+MY_BIN=/home/will/Workspace/GitHub/MyConfigFiles/Bin
 
 . $MY_DIR/git-completion.bash
 . $MY_DIR/.git-prompt.sh
@@ -7,7 +9,7 @@ MY_DIR=/home/will/Workspace/GitHub/MyConfigFiles/Doc
 
 # Set Titlebar and Prompt
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
-export PS1="\[${BLUE}\]\u@ubuntu:\[${YELLOW}\]\w\[${GREEN}\]\$(__git_ps1)\[${NORMAL}\]\$ "
+export PS1='\[${BLUE}\]\u@ubuntu:\[${YELLOW}\]\w\[${GREEN}\]$(__git_ps1 " (%s)")\[${NORMAL}\]\$ '
 
 # java ~
 export JAVA_HOME=/home/will/Download/Software/Programming/jdk1.7.0_25
@@ -17,7 +19,10 @@ export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 # golang ~
 export GOROOT=/home/will/go
 
-export PATH=${JAVA_HOME}/bin:${GOROOT}/bin:/home/will/node/bin:$PATH
+# redis
+REDIS_SRC=/home/will/Download/Software/Programming/redis-2.6.16/src
+
+export PATH=${JAVA_HOME}/bin:${GOROOT}/bin:$REDIS_SRC:$MY_BIN:/home/will/node/bin:$PATH
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

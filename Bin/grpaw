@@ -1,0 +1,1 @@
+grep "$1" * -rnw --color=auto -I --exclude-dir=.[a-zA-Z0-9]* --exclude=*{.min.js,swp,log}
