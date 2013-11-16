@@ -33,10 +33,10 @@ set fillchars+=stl:\ ,stlnc:\
 
 " Tag List
 let Tlist_Use_Right_Window=1
-let Tlist_Enable_Fold_Column=0  " ä½¿taglistæ’ä»¶ä¸æ˜¾ç¤ºå·¦è¾¹çš„æŠ˜å è¡Œ
-let Tlist_Show_One_File=1 " taglistæ’ä»¶åªæ˜¾ç¤ºå½“å‰æ–‡ä»¶çš„tag
-let Tlist_Exit_OnlyWindow=1 " å¦‚æœtaglistçª—å£æ˜¯æœ€åä¸€ä¸ªçª—å£åˆ™é€€å‡ºVim
-let Tlist_File_Fold_Auto_Close=1  " è‡ªåŠ¨æŠ˜å 
+let Tlist_Enable_Fold_Column=0  " Ê¹taglist²å¼ş²»ÏÔÊ¾×ó±ßµÄÕÛµşĞĞ
+let Tlist_Show_One_File=1 " taglist²å¼şÖ»ÏÔÊ¾µ±Ç°ÎÄ¼şµÄtag
+let Tlist_Exit_OnlyWindow=1 " Èç¹ûtaglist´°¿ÚÊÇ×îºóÒ»¸ö´°¿ÚÔòÍË³öVim
+let Tlist_File_Fold_Auto_Close=1  " ×Ô¶¯ÕÛµş
 
 if has('gui_running')
   " source $MY_DIR/.vimrc_statusline
@@ -97,3 +97,12 @@ endif
 
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
+" Code settings:
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=chinese
+set fileencodings=ucs-bom,utf-8,chinese
+
+set langmenu=zh_CN.utf-8
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
