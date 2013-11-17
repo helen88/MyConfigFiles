@@ -98,7 +98,7 @@ endif
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
 " encoding setting
-set fileencodings=utf-8,gb2312,gbk,gb18030
-set termencoding=utf-8
-set encoding=prc
+" set fileencodings=utf-8,gb2312,gbk,gb18030
+" set termencoding=utf-8
+" set encoding=prc
 
