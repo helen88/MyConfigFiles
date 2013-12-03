@@ -8,6 +8,10 @@ alias df='df -h'
 alias du='du -h --max-depth=1'
 alias cp='cp -iR'
 
+alias cdg="cd ~/GitHub/lordofpomelo/game-server"
+alias cdw="cd ~/GitHub/lordofpomelo/web-server"
+alias cdp="cd ~/GitHub/pomelo"
+
 alias cd-='cd -'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
