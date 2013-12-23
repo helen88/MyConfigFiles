@@ -65,3 +65,6 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;31;40'
 fpath=(~/GitHub/zsh-completions/src $fpath)
 . $HOME/GitHub/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# npm
+. <(npm completion)
+
