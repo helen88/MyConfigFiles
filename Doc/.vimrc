@@ -59,6 +59,7 @@ map <C-s> :w<CR>
 map <CR> o<ESC>
 map <S-CR> O<ESC>
 map <C-n> :noh<CR>
+map <C-o> :only<CR>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
