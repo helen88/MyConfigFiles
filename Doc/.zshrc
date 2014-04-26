@@ -52,10 +52,14 @@ export GOROOT=$HOME/go
 export GOPATH=$HOME/Exercise/Go
 export GOBIN=$GOPATH/bin
 
-# Customize to your needs...
-export PATH=~/Download/Software/Programming/jdk1.7.0_25/bin:$GOROOT/bin:$GOBIN:~/Download/Software/Programming/redis-2.6.16/src:~/Workspace/GitHub/MyConfigFiles/Bin:~/node/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH
+export QTPATH=usr/local/Trolltech/Qt-4.8.5
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+# Customize to your needs...
+export PATH=~/Download/Software/Programming/jdk1.7.0_25/bin:$QTPATH/bin:$GOROOT/bin:$GOBIN:~/Download/Software/Programming/redis-2.6.16/src:~/Workspace/GitHub/MyConfigFiles/Bin:~/node/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:$QTPATH/lib
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 . $CONF_DIR/.bash_aliases
 
