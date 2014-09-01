@@ -55,7 +55,8 @@ export GOBIN=$GOPATH/bin
 # export QTPATH=/usr/local/Trolltech/Qt-4.8.5
 export QTPATH=/home/will/Qt5.2.1/5.2.1/gcc_64
 
-export MONGODB_BIN=$HOME/Download/Software/Programming/mongodb-linux-x86_64-2.6.3/bin
+export MONGODB_DIR=$HOME/Download/Software/Programming/mongodb-linux-x86_64-2.6.3
+export MONGODB_BIN=$MONGODB_DIR/bin
 
 # Customize to your needs...
 export PATH=$MONGODB_BIN:~/Download/Software/Programming/jdk1.7.0_25/bin:$QTPATH/bin:$GOROOT/bin:$GOBIN:~/Download/Software/Programming/redis-2.6.16/src:~/Workspace/GitHub/MyConfigFiles/Bin:~/node/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH
