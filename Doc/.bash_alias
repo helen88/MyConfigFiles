@@ -1,9 +1,11 @@
 # aliases
 
-alias lnb='pushd ~ && rm -rf ./.bashrc && ln -s $MY_DIR/.bashrc ./.bashrc && popd'
-alias reloadbash="lnb && source ~/.bashrc"
+alias lnbashrc='pushd ~ && rm -rf ./.bashrc && ln -s $MY_DIR/.bashrc ./.bashrc && popd'
+alias reloadbash="lnbashrc && source ~/.bashrc"
+alias lnvimrc='pushd ~ && rm -rf ./.vimrc && ln -s $MY_DIR/.vimrc ./.vimrc && popd'
 
-alias cdg="cd $GAM"
+alias cdgam="cd $GAM"
+alias cdg="cd $GAM/sparx_gam"
 alias cdc="cd $GAM/client_gam"
 
 alias cdconf="cd $MY_DIR"

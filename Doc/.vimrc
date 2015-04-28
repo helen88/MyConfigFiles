@@ -1,4 +1,3 @@
-let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
 set nocompatible
 set nu
 set tabstop=2
@@ -28,19 +27,6 @@ set background=dark
 
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
-
-" Tag List
-let Tlist_Use_Right_Window=1
-let Tlist_Enable_Fold_Column=0  " 使taglist插件不显示左边的折叠行
-let Tlist_Show_One_File=1 " taglist插件只显示当前文件的tag
-let Tlist_Exit_OnlyWindow=1 " 如果taglist窗口是最后一个窗口则退出Vim
-let Tlist_File_Fold_Auto_Close=1  " 自动折叠
-
-if has('gui_running')
-  " source $MY_DIR/.vimrc_statusline
-else
-  " source $MY_DIR/.vimrc_statusline_iterm2
-endif
 
 set guifont=Courier_New:h15
 set gcr=a:blinkon0
@@ -78,7 +64,6 @@ set cursorline " highlight the current line
 set showcmd " display incomplete commands
 set incsearch " do incremental searching
 " autoload .vimrc
-autocmd! bufwritepost .vimrc source $MY_DIR/.vimrc
 set wildmenu  " cmd auto completion
 " set ignorecase
 set hlsearch
