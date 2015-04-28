@@ -1,18 +1,12 @@
 # aliases
-alias reloadzsh="exec zsh && source ~/.zshrc"
 
-alias psn="ps aux | grep node -w"
-alias mtl="multitail /var/log/sparx/admin.log /var/log/sparx/api.log /var/log/sparx/timerd.log"
-alias ta="tail -f /var/log/sparx/api.log"
-alias tt="tail -f /var/log/sparx/timerd.log"
+alias lnb='pushd ~ && rm -rf ./.bashrc && ln -s $MY_DIR/.bashrc ./.bashrc && popd'
+alias reloadbash="lnb && source ~/.bashrc"
 
-alias cdg="cd $GAM/sparx_gam"
+alias cdg="cd $GAM"
 alias cdc="cd $GAM/client_gam"
-alias cdl="cd /var/log/sparx"
-alias cds="cd $GAM/sparx_gam/sparx/scripts"
-alias ut="$GAM/sparx_gam/sparx/scripts/test.sh"
 
-alias sshios="cdg && ssh jenkins@10.80.232.15"
+alias cdconf="cd $MY_DIR"
 
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
@@ -21,30 +15,12 @@ alias l="ls"
 alias la="ls -lah"
 alias ll="la"
 alias lm='ll | more'
-alias df='df -h'
-alias du='du -h -d1'
 alias cp='cp -iR'
 
 alias mv='mv -i'
 alias rm='rm -ivr'
 alias md='mkdir -p'
-alias ztar='tar -czvf'
-alias uztar='tar -xzvf'
-alias ubz2tar='tar -jvxf'
-alias ttar='tar -tvf'
 alias man='man -a'
 alias vi='vim'
 alias mvi='mvim'
-
-alias gitk='/usr/local/git/bin/gitk'
-alias ga='git add --ignore-removal'
-alias gsu='git submodule update'
-
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias mongod='mongod --dbpath ~/Downloads/Software/Programming/MongoDB/mongodb-osx-x86_64-2.6.1/data/db'
-alias rc='redis-cli'
 
