@@ -7,25 +7,14 @@
 	status = auto
 	ui = auto
 [core]
-	excludesfile = /Users/zgli/Workspace/GitHub/gitignore/Node.gitignore
 	quotepath = false
-# [http]
-#   proxy = 123.58.180.183:4152
 [push]
   default = simple
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
-[commit]
-	template = /Users/zgli/MyConfigFiles/GitCommitMsg.txt
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [diff]
 	tool = meld
 [alias]
 	diffall = git-diffall
+

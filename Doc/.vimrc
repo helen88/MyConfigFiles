@@ -1,20 +1,19 @@
 let $MY_DIR = $HOME."/Workspace/GitHub/MyConfigFiles/Doc"
-
 set nocompatible
 set nu
 set tabstop=2
 set expandtab
 set shiftwidth=2
 
-filetype plugin on
-
-call pathogen#infect()
 filetype plugin indent on
 
 syntax on
 syntax enable
 
+" Always show statusline
 set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
 
 " Solarized options 
 let g:solarized_termtrans = 1
@@ -31,7 +30,6 @@ let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
 
 " Tag List
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 let Tlist_Use_Right_Window=1
 let Tlist_Enable_Fold_Column=0  " 使taglist插件不显示左边的折叠行
 let Tlist_Show_One_File=1 " taglist插件只显示当前文件的tag
@@ -103,4 +101,8 @@ if has('mouse')
 endif
 
 autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
+" encoding setting
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set encoding=prc
 
