@@ -18,7 +18,6 @@ set autoread  "Set to auto read when a file is changed from the outside
 set paste
 set autowriteall
 
-let mapleader = ","
 map <C-s> :w<CR>
 map <CR> o<ESC>
 map <S-CR> O<ESC>
