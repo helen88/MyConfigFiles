@@ -1,8 +1,15 @@
 set nocompatible
 set nu
 set tabstop=2
-set expandtab
 set shiftwidth=2
+
+" a combination of spaces and tabs are used to simulate tab stops at a width other than the (hard)tabstop
+set softtabstop=2
+
+" make 'tab' insert indents instead of tabs at the beginning of a line
+set smarttab
+
+"set expandtab " always uses spaces instead of tab characters
 
 syntax on
 syntax enable
