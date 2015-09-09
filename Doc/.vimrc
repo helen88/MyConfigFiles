@@ -108,8 +108,6 @@ autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 filetype plugin on
 let g:pydiction_location='~/.vim/tools/pydiction/complete-dict'
 let g:ycm_autoclose_preview_window_after_completion=1
-" 引入，可以补全所有第三方库，以及python的第三方包
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 "直接出发自动补全
 let g:ycm_key_invoke_completion = ''
 
@@ -117,13 +115,6 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on     " required!
 "
