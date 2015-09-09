@@ -55,6 +55,13 @@ export GAM=~/Workspace/Projects/gam
 
 # Customize to your needs...
 export PATH=~/Library/Bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/redis-2.6.14/src:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$ZOOKEEPER_BIN:$MONGODB_BIN:$PATH
+export PATH=$PATH:/Users/will/Android/android-sdk-macosx/platform-tools:/Users/will/Android/android-sdk-macosx/tools:/Users/will/Android/apache-ant-1.9.4/bin:/Users/will/Android/android-sdk-macosx/build-tools/20.0.0:/usr/local/apache-maven-3.2.5/bin
+
+export MAVEN_OPTS="-Xms256m -Xmx512m"
+
+export ANDROID_HOME=/Users/will/Android/android-sdk-macosx
+#export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
 
 . $CONF_DIR/.bash_alias
 
